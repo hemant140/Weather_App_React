@@ -1,15 +1,16 @@
+//  Name -  Hemant Singh 
+//  Project - Assigment task
+//  Description: This is an assignment project to get weather details of any city using openweather api and display
+//  Date -  8/Aug/2023
+//  Visit My PortFolio - https://hemant14.netlify.app/
+
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import cloudSunImage from './images/cloudy_1163661.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faTint, faSun,
-  faCloudSun,
-  faCloud,
-  faCloudRain,
-  faCloudShowersHeavy,
-  faSnowflake,
-  faMoon, } from '@fortawesome/free-solid-svg-icons';
+  faTint
+} from '@fortawesome/free-solid-svg-icons';
 const API_KEY = '602a3c09bad82e8f4265c87eb7b54734';
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
     e.preventDefault();
     setHidden(true)
     if (!location) {
-      setError('Please enter a location.');
+      setError('Please Enter a location.');
       return;
     }
 
@@ -60,7 +61,7 @@ function App() {
     <div className="App">
       <div className="inputFormDiv">
         {loading && <div class="loader">Loading...</div>}
-        
+
         <div className='heading'>
           {hidden && <p className='backIcon' onClick={backIcon}><i class="fas fa-arrow-left"></i></p>}
           {hidden ? <p className='headingName'>Weather App</p> : <p className='headingName'>Weather App</p>}
