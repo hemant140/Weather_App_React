@@ -18,6 +18,11 @@ Follow these steps to get the project up and running:
    ```bash
    git clone https://github.com/hemant140/Weather_app_React
 
+   git remote add origin https://github.com/hemant140/Weather_app_React
+
+git push -u origin master
+
+
 2. cd weather-forecast-app
 
 3. npm install
