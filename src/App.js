@@ -11,6 +11,7 @@ import sunnyImage from './images/sun_4814268.png'
 import cloudyImage from './images/clouds_414927.png'
 import rainyImage from './images/rain_2469994.png'
 import snowyImage from './images/snowy_1779887.png'
+import errorImage from './images/error.png'
 import FeelLike from './images/hot.png'
 import humidity from './images/humidity.png'
 
@@ -85,6 +86,9 @@ function App() {
         </div>
         {error &&
           <div className="error">
+            <div>
+              <img src={errorImage} alt="" />
+            </div>
             <p >{error}</p>
             <button onClick={backIcon} className='backButton'><i class="fas fa-arrow-left arrowIcon"></i> Back</button>
           </div>

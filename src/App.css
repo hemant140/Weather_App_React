@@ -190,8 +190,16 @@ width: 55px;
    font-size: 18px;
    font-weight: bold;
    margin-top: 5px;
-   padding: 73px 9px;
-   margin: 37px 28px;
+   padding: 0px 9px;
+   margin: 30px 16px;
+ }
+
+ .error img {
+   width: 150px;
+ }
+
+ .error div {
+   text-align: center;
  }
 
  .arrowIcon {
