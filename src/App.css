@@ -1,150 +1,297 @@
-* {
-  margin: 0 auto;
-  padding: 0;
-}
+ * {
+   margin: 0 auto;
+   padding: 0;
+ }
 
-.App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #43aefc;
-}
+ .App {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background-color: #43aefc;
+ }
 
-.inputFormDiv {
-  background-color: white;
-  border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
+ .inputFormDiv {
+   background-color: white;
+   border-radius: 4px;
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+ }
 
-.backIcon {
-  margin: 0;
-  margin-right: 4px;
-  cursor: pointer;
-}
+ .backIcon {
+   margin: 0;
+   margin-right: 4px;
+   cursor: pointer;
+ }
 
-.headingName {
-  margin-left: 3px;
-}
+ .headingName {
+   margin-left: 3px;
+   font-size: 17px;
+   font-weight: 500;
+   font-family: poppins;
+ }
 
-.heading {
-  border-bottom: 1px solid gray;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  padding: 12px 7px;
-  color: #43aefc;
-  font-size: 20px;
-  display: flex;
-}
+ .heading {
+   border-bottom: 1px solid #a5a0a04f;
+   padding: 12px 7px;
+   color: #43aefc;
+   display: flex;
+ }
 
-.weatherForm {
-  padding: 34px 43px;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-}
+ .weatherForm {
 
-.weatherForm input {
-  padding: 10px;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  margin-right: 10px;
-  margin-bottom: 30px;
-  width: 179px;
-}
+   padding: 8px 10px;
+   margin-top: 14px;
+   margin-bottom: 14px;
+   display: flex;
+   flex-direction: column;
 
-.weather-form input:focus {
-  border-color: #ccc;
-}
+ }
 
-.weatherForm button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 202px;
-}
+ .weatherForm input {
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   margin-right: 10px;
+   margin-bottom: 5px;
+   width: 260px;
+   color: #443d3d;
+   font-family: poppins;
+ }
+
+ .weatherForm input:focus {
+   border: 1px solid #ccc;
+   background-color: rgb(238, 238, 238);
+   outline: none;
+ }
+
+ .form-control {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   width: 100%;
+   padding: 0px 0px 0px 3px;
+   margin-bottom: 7px;
+ }
+
+ .line-1 {
+   width: 35%;
+   height: 1px;
+   background-color: #5352528a;
+ }
+
+ .line-2 {
+   width: 35%;
+   height: 1px;
+   background-color: #5352528a;
+ }
+
+ .line-text {
+   font-family: poppins;
+   color: #b6b2b2;
+ }
 
 
-.inputFormDiv {
-  width: 300px;
-  margin: 0 auto;
-  background-color: white;
-}
+ .weather-form input:focus {
+   border-color: #ccc;
+ }
+
+ .weatherForm button {
+   padding: 10px 20px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   width: 263px;
+ }
 
 
-.container {
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  right: -35px;
-  top: -50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+ .inputFormDiv {
+   width: 300px;
+   margin: 0 auto;
+   background-color: white;
+ }
 
-.headername {
-  font-size: 34px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
 
-.weatherCrad {
-  display: flex;
-  flex-direction: column;
-}
+ .container {
+   width: 250px;
+   height: 250px;
+   position: absolute;
+   right: -35px;
+   top: -50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
 
-.weatherImg {
-  margin-top: 5px;
-}
+ .headername {
+   font-size: 34px;
+   font-weight: bold;
+   text-transform: uppercase;
+ }
 
-.weatherCrad img {
-  width: 55px;
-}
+ .weatherCrad {
+   display: flex;
+   flex-direction: column;
+ }
 
-.temp {
-  font-size: 50px;
-  font-weight: 600;
-}
+ .weatherImg {
+   margin-top: 15px;
+ }
 
-.temp span {
-  font-size: 50px;
-  font-weight: 400;
-}
+ .weatherImg img {
+   width: 120px;
+ }
 
-.description {
-  text-transform: capitalize;
-  margin-bottom: 5px;
-}
+ /* .weatherCrad img {
+width: 55px;
+} */
 
-.location{
-  margin-bottom: 50px;
-}
+ .temp {
+   font-size: 40px;
+   font-weight: 600;
+ }
 
-.footerCard {
-  display: flex;
-  border: 1px solid #d1c5c5;
-  border-bottom: none;
-}
+ .temp span {
+   font-size: 40px;
+   font-weight: 400;
+ }
 
-.footerCard p {
-  padding: 12px 27px;
-  border: 1px solid #d1c5c5;
-  border-bottom: none;
-  width: 94px;
-}
+ .description {
+   text-transform: capitalize;
+   font-size: 16px;
+   margin-bottom: 5px;
+ }
 
-.error {
-  color: rgb(247, 63, 63);
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 5px;
-  padding: 73px 9px;
-}
+ .location {
+   font-size: 16px;
+   margin-bottom: 26px;
+ }
 
-.iconWeather{
-  font-size: 64px;
-}
+ .footerCard {
+   width: 99.7%;
+   height: 50px;
+   display: flex;
+   border: 1px solid#83818142;
+   ;
+   border-bottom: none;
+   margin: 0;
+ }
 
+ .footerCard p {
+   padding: 12px 27px;
+   border: 1px solid #d1c5c5;
+   border-bottom: none;
+   width: 94px;
+ }
+
+ .error {
+   color: rgb(247, 63, 63);
+   font-size: 18px;
+   font-weight: bold;
+   margin-top: 5px;
+   padding: 73px 9px;
+   margin: 37px 28px;
+ }
+
+ .arrowIcon {
+   margin-right: 7px;
+ }
+
+ .backButton {
+   padding: 10px 20px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   font-weight: bold;
+   border-radius: 4px;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+ }
+
+ .iconWeather {
+   font-size: 64px;
+ }
+
+
+
+ .footer-text-1 {
+   width: 50%;
+   border-right: 1px solid #83818142;
+   ;
+ }
+
+ .footer-text-2 {
+   width: 50%;
+
+ }
+
+ .footer-text-1 {
+   display: flex;
+ }
+
+ .footer-text-2 {
+   display: flex;
+ }
+
+ .icon-f-1 {
+   width: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .icon-f-2 {
+   width: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+ }
+
+ .feel-like {
+   font-size: 10px;
+   font-family: poppins;
+ }
+
+ .c-17 {
+   font-size: 16px;
+   font-family: poppins;
+   font-weight: 600;
+ }
+
+
+ .loaderDiv {
+   border: 16px solid #f3f3f3;
+   border-radius: 50%;
+   margin: 75px 75px;
+   border-top: 16px solid #3498db;
+   width: 120px;
+   height: 120px;
+   -webkit-animation: spin 2s linear infinite;
+   animation: spin 2s linear infinite;
+ }
+
+
+ @-webkit-keyframes spin {
+   0% {
+     -webkit-transform: rotate(0deg);
+   }
+
+   100% {
+     -webkit-transform: rotate(360deg);
+   }
+ }
+
+ @keyframes spin {
+   0% {
+     transform: rotate(0deg);
+   }
+
+   100% {
+     transform: rotate(360deg);
+   }
+ }
